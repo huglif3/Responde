@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     margin: '20px 50px',
   },
   event: {
-    color: '#A32896',
+    color: 'green',
   },
   searchInput: {
     width: '80%',

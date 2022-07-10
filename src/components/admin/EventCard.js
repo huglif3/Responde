@@ -31,10 +31,10 @@ const styles = StyleSheet.create({
     margin: '8px'
   },
   checkin: {
-    backgroundColor: '#A32896',
+    backgroundColor: 'green',
     color: 'white',
     fontWeight: 'bold',
-    borderColor: '#A32896',
+    borderColor: 'green',
     marginRight: '24px'
 
   },

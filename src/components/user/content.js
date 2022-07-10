@@ -14,9 +14,8 @@ const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
     height: '100vh',
-    backgroundColor: 'black'
-    /* coverImage: `url(${coverImage})`,
-    backgroundImage: `url(${coverImage})` */
+    coverImage: `url(${coverImage})`,
+    backgroundImage: `url(${coverImage})`
   },
   container: {
     position: 'absolute',
@@ -27,14 +26,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: '96px',
     fontWeight: 'bold',
-    color: 'white',
+    color: 'green',
     '@media (max-width: 575px)': {
       fontSize: '64px',
     }
   },
   description: {
     fontSize: '24px',
-    color: 'white',
+    color: 'green',
     marginLeft: '15px',
     '@media (max-width: 575px)': {
       fontSize: '16px',
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
   rsvpBtn: {
     width: '200px',
     backgroundColor: 'white',
-    color: '#A32896',
+    color: 'green',
     padding: '8px',
     borderColor: 'white',
     fontWeight: 'bold',
@@ -56,11 +55,11 @@ const styles = StyleSheet.create({
   },
   adminBtn: {
     width: '200px',
-    backgroundColor: '#A32896',
+    backgroundColor: 'green',
     color: 'white',
     padding: '8px',
     fontWeight: 'bold',
-    borderColor: '#A32896',
+    borderColor: 'green',
     margin: '10px',
     '@media (max-width: 575px)': {
       width: '150px',
@@ -71,11 +70,11 @@ const styles = StyleSheet.create({
     '@media (max-width: 575px)': {
       width: '100%',
       display: 'block',
-      backgroundColor: '#A32896',
+      backgroundColor: 'green',
       color: 'white',
       padding: '8px',
       fontWeight: 'bold',
-      borderColor: '#A32896',
+      borderColor: 'green',
       margin: 'auto',
     }
   },
@@ -109,7 +108,8 @@ export default function Content() {
         <p className={css(styles.description)}>Incentivize DAO Participation</p>
         <div className={css(styles.btnContainer)}>
           <Button className={css(styles.adminBtn)} onClick= {() => setModalShow(!modalShow)}>CREATE EVENT</Button>
-          <Button className={css(styles.adminBtn)}><a className={css(styles.adminBtn)} href='#events'>FIND EVENTS</a></Button>
+          <Button className={css(styles.adminBtn)}><a className={css(styles.adminBtn)} href='#events'>SEARCH EVENTS</a></Button>
+          <Button className={css(styles.adminBtn)}><Link className={css(styles.adminItem)} to='/admin'>ADMIN</Link></Button>
           <CreateEventModal show={modalShow} onHide={() => setModalShow(false)}/>
           <RSVPModal show={rsvp} onHide={() => setRSVP(false)}/>
         </div>

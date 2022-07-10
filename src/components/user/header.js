@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between', 
+    alignItems: 'center'
   },
   menuItems: {
     display: 'inline',
@@ -36,6 +37,7 @@ const styles = StyleSheet.create({
    
   },
   menu: {
+    display: 'flex',
     margin: '20px',
   },
   connect: {
@@ -47,7 +49,8 @@ const styles = StyleSheet.create({
     color: 'white'
   },
   logo: {
-    margin: '16px',
+    display: 'flex',
+    margin: 'none'
   },
   adminItem: {
     textDecoration: 'none',
@@ -78,7 +81,7 @@ export default function Header() {
   return(
     <div className={css(styles.wrapper)}>     
       <div>
-        <img className={css(styles.logo)} src={logo} alt='logo' height='48px' width='48px'/>
+        <img className={css(styles.logo)} src={logo} alt='logo' height='200px' width='200px'/>
       </div>
       <div>
       <div className={css(styles.menu)}>

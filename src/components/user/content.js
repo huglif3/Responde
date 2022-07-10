@@ -104,8 +104,8 @@ export default function Content() {
     <div className={css(styles.wrapper)}>
       <Header/>
       <div className={css(styles.container)}>
-        <h1 className={css(styles.title)}>DAO Event <br/>Registration</h1>
-        <p className={css(styles.description)}>Incentivize DAO Participation</p>
+        <h1 className={css(styles.title)}>Responde</h1>
+        <p className={css(styles.description)}>DAO Event Registration... <br/>... to Incentivize Participation</p>
         <div className={css(styles.btnContainer)}>
           <Button className={css(styles.adminBtn)} onClick= {() => setModalShow(!modalShow)}>CREATE EVENT</Button>
           <Button className={css(styles.adminBtn)}><a className={css(styles.adminBtn)} href='#events'>SEARCH EVENTS</a></Button>

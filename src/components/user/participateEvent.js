@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     maxWidth: '200px'
   },
   actualDescription: {
-    fontSize: "24px",
+    fontSize: "20px",
     color: "green",
     marginLeft: "15px",
     "@media (max-width: 575px)": {
@@ -58,6 +58,18 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+  },
+  adminBtn: {
+    width: "200px",
+    backgroundColor: "green",
+    color: "white",
+    padding: "8px",
+    fontWeight: "bold",
+    borderColor: "green",
+    margin: "10px",
+    "@media (max-width: 575px)": {
+      width: "150px",
+    },
   },
 });
 
@@ -76,7 +88,13 @@ export default function Participate() {
             Dao Street 203 <br /> Dao City, Spain <br /> 23233{" "}
           </p>
         </div>
-        <p className={css(styles.actualDescription)}>Here I normally describe my super fancy project with super fancy words: "Web3" "Blockchain" "Hackathon"</p>
+        <p className={css(styles.actualDescription)}>Here I normally describe my super fancy project with super fancy words: "Web3" "NFT" "DAO" "Blockchain" "Hackathon" usually make for a good start</p>
+        <Button
+            className={css(styles.adminBtn)}
+            onClick={() => setRSVP(false)}
+          >
+            RSVP
+          </Button>
         <div className={css(styles.btnContainer)}>
           <RSVPModal show={rsvp} onHide={() => setRSVP(false)} />
         </div>

@@ -1,28 +1,30 @@
-import {Row,  Col} from 'react-bootstrap'
-import { StyleSheet, css } from 'aphrodite'
+import { Row, Col } from "react-bootstrap";
+import { StyleSheet, css } from "aphrodite";
 
 const styles = StyleSheet.create({
   wrapper: {
-    width: '100%',
-    padding: '48px',
-    backgroundColor: '#A32896',
-    color: 'white',
-    marginTop: '24px'
+    width: "100%",
+    padding: "20px",
+    backgroundColor: "green ",
+    color: "white",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  socials: {
+    width: '30%',
   }
-  
-})
+});
 
 export default function Footer() {
-  return(
+  return (
     <div className={css(styles.wrapper)}>
-      <Row>
-        <Col><p>TETicketing</p></Col>
-        <Col><p>Discord</p></Col>
-      </Row>
-      <Row>
-        <Col><p>Copyright (c) 2022. All rights reserved</p></Col>
-        <Col><p>Twitter</p></Col>
-      </Row>
+      <p>
+        RESPONDE <br /> Copyright (c) 2022. All rights reserved
+      </p>
+      <div className={css(styles.socials)}>
+        <p>Discord</p>
+        <p>Twitter</p>
+      </div>
     </div>
-  )
+  );
 }

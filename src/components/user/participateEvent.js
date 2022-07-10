@@ -42,6 +42,16 @@ const styles = StyleSheet.create({
     "@media (max-width: 575px)": {
       fontSize: "16px",
     },
+    maxWidth: '200px'
+  },
+  actualDescription: {
+    fontSize: "24px",
+    color: "green",
+    marginLeft: "15px",
+    "@media (max-width: 575px)": {
+      fontSize: "16px",
+    },
+    maxWidth: '300px'
   },
   btnContainer: {
     margin: "15px",
@@ -66,7 +76,7 @@ export default function Participate() {
             Dao Street 203 <br /> Dao City, Spain <br /> 23233{" "}
           </p>
         </div>
-        <p className={css(styles.description)}></p>
+        <p className={css(styles.actualDescription)}>Here I normally describe my super fancy project with super fancy words: "Web3" "Blockchain" "Hackathon"</p>
         <div className={css(styles.btnContainer)}>
           <RSVPModal show={rsvp} onHide={() => setRSVP(false)} />
         </div>

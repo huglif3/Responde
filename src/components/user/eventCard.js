@@ -5,6 +5,7 @@ import icon from '../../images/background.png'
 import RSVPModal from './rsvpModal'
 import { loadStdlib } from '@reach-sh/stdlib';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 const stdlib = loadStdlib('ALGO');
 
 const styles = StyleSheet.create({
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     marginLeft: '24px',
   },
   event: {
-    color: '#A32896',
+    color: 'green',
   },
   searchInput: {
     width: '20%',
@@ -21,8 +22,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   tickerBtn: {
-    backgroundColor: '#A32896',
-    borderColor: '#A32896',
+    backgroundColor: 'green',
+    borderColor: 'green',
     width: '100%'
   },
   location: {
@@ -31,12 +32,16 @@ const styles = StyleSheet.create({
     marginBottom: '8px'
   },
   venue: {
-    color: '#A32896',
+    color: 'green',
     marginLeft: '8px'
   },
   card: {
     boxShadow: '4px 8px 0 rgba(0,0,0,0.2',
     transition: '0.3s',
+  },
+  link: {
+    color: 'white',
+    textDecoration: 'none',
   }
 })
 
@@ -79,7 +84,7 @@ export default function EventCard(props) {
               <p>Fee: <span>{props.fee}</span></p>
               <p>Available Ticket: <span>{tickets}</span></p>
             </Card.Text>
-            <Button className={css(styles.tickerBtn)} variant="primary" onClick= {() => setRSVP(!rsvp)}>Get Ticket</Button>
+            <Button className={css(styles.tickerBtn)} variant="primary"><Link className={css(styles.link)} to='/participate'>Participate</Link></Button>
             <RSVPModal show={rsvp} onHide={() => setRSVP(false)} tokenId = {props.tokenId} creatorAccount={props.creatorAccount} fee= {props.fee}/>
           </Card.Body>
         </Card>

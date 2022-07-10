@@ -14,7 +14,7 @@ export default function Home() {
   return(
     <div className={css(styles.wrapper)}>
       <Content/>
-      <EventBanner/>
+      <EventBanner />
       <Footer/>
     </div>
   )

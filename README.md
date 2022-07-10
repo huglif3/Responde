@@ -1,4 +1,4 @@
-# RSVP TICKETING DAPP BUILT WITH REACH DEPLOYED ON ALGORAND
+# RSVP TICKETING DAPP BUILT WITH REACH DEPLOYED TO ETHEREUM & SOLANA
 The RSVP Ticketing DApp that allows you to purchase a ticket by paying some Algos and in return receives a non-network token which can be resold, and allowing you to get rewarded with a non-network token after you attend, and have been verified by the organizer. The platform owner also benefits from every ticket sold by the organizer he get's a certain percentage.
 
 # Features of the RSVP Ticketing dApp
@@ -6,9 +6,6 @@ The RSVP Ticketing DApp that allows you to purchase a ticket by paying some Algo
 - Organizer sells ticket to attendee at a fee
 - Attendee RSVP for the event and pays the event fee
 - Organizer checkin attendees that attends the events and reward checkin attendees with a reward token
-
-# Live Demo
-Here is a [demo link](https://rsvp-dapp.vercel.app/) to the deployed Application on vercel. Figma design [link](https://www.figma.com/file/PlznxkNi3S58s1HUGRzrbj/rsvp-ticketing?node-id=10%3A419)
 
 # Run Frontend Code
 To test the code

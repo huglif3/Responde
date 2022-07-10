@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     margin: '20px',
   },
   connect: {
-    backgroundColor: '#A32896',
+    backgroundColor: 'green',
     borderColor: 'white',
   },
   event: {
@@ -83,9 +83,7 @@ export default function Header() {
       <div>
       <div className={css(styles.menu)}>
         <ul >
-          <li className={css(styles.menuItems)}><a className={css(styles.event)} href='#events'>Events</a></li>
-          <li className={css(styles.menuItems)}><Link className={css(styles.adminItem)} to='/admin'>Admin</Link></li>
-          <li className={css(styles.menuItems)} onClick={() => {login()}}>Login</li>
+          <li className={css(styles.btnItems)}><Button className={css(styles.connect)} onClick= {() => login()}>Login</Button></li>
           <li className={css(styles.btnItems)}><Button className={css(styles.connect)} onClick= {() => setWallet(!wallet)}>Connect Wallet</Button></li>
           <ConnectWallet show={wallet} onHide={() => setWallet(false)}/>
         </ul>

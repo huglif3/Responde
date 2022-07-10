@@ -26,14 +26,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: '96px',
     fontWeight: 'bold',
-    color: 'white',
+    color: 'green',
     '@media (max-width: 575px)': {
       fontSize: '64px',
     }
   },
   description: {
     fontSize: '24px',
-    color: 'white',
+    color: 'green',
     marginLeft: '15px',
     '@media (max-width: 575px)': {
       fontSize: '16px',
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   rsvpBtn: {
     width: '200px',
     backgroundColor: 'white',
-    color: '#A32896',
+    color: 'green',
     padding: '8px',
     borderColor: 'white',
     fontWeight: 'bold',
@@ -55,11 +55,11 @@ const styles = StyleSheet.create({
   },
   adminBtn: {
     width: '200px',
-    backgroundColor: '#A32896',
+    backgroundColor: 'green',
     color: 'white',
     padding: '8px',
     fontWeight: 'bold',
-    borderColor: '#A32896',
+    borderColor: 'green',
     margin: '10px',
     '@media (max-width: 575px)': {
       width: '150px',
@@ -70,11 +70,11 @@ const styles = StyleSheet.create({
     '@media (max-width: 575px)': {
       width: '100%',
       display: 'block',
-      backgroundColor: '#A32896',
+      backgroundColor: 'green',
       color: 'white',
       padding: '8px',
       fontWeight: 'bold',
-      borderColor: '#A32896',
+      borderColor: 'green',
       margin: 'auto',
     }
   },

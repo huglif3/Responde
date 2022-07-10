@@ -88,7 +88,7 @@ export default function Participate() {
             Dao Street 203 <br /> Dao City, Spain <br /> 23233{" "}
           </p>
         </div>
-        <p className={css(styles.actualDescription)}>Here I normally describe my super fancy project with super fancy words: "Web3" "NFT" "DAO" "Blockchain" "Hackathon" usually make for a good start</p>
+        <p className={css(styles.actualDescription)}>Here I normally describe my super fancy project with super fancy words: "NFT" "DAO" usually make for a good start</p>
         <Button
             className={css(styles.adminBtn)}
             onClick={() => setRSVP(false)}

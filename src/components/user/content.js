@@ -7,14 +7,16 @@ import { Link } from 'react-router-dom'
 import RSVPModal from './rsvpModal'
 import { loadStdlib } from '@reach-sh/stdlib';
 import { login } from '../../api/login'
+import CreateEventModal from '../admin/modal/createEventModal'
 const stdlib = loadStdlib('ALGO');
 
 const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
     height: '100vh',
-    coverImage: `url(${coverImage})`,
-    backgroundImage: `url(${coverImage})`
+    backgroundColor: 'black'
+    /* coverImage: `url(${coverImage})`,
+    backgroundImage: `url(${coverImage})` */
   },
   container: {
     position: 'absolute',
@@ -103,11 +105,12 @@ export default function Content() {
     <div className={css(styles.wrapper)}>
       <Header/>
       <div className={css(styles.container)}>
-        <h1 className={css(styles.title)}>Tech Event <br/>Ticketing</h1>
-        <p className={css(styles.description)}>Decentralized ticketing app built with Reach <br/> deployed on Algorand</p>
+        <h1 className={css(styles.title)}>DAO Event <br/>Registration</h1>
+        <p className={css(styles.description)}>Incentivize DAO Participation</p>
         <div className={css(styles.btnContainer)}>
-          <Button className={css(styles.rsvpBtn)} onClick= {login}>Login</Button>
-          <Button className={css(styles.adminBtn)}><Link className={css(styles.adminItem)} to='/admin'>ORGANIZE</Link></Button>
+          <Button className={css(styles.adminBtn)} onClick= {() => setModalShow(!modalShow)}>CREATE EVENT</Button>
+          <Button className={css(styles.adminBtn)}><a className={css(styles.adminBtn)} href='#events'>FIND EVENTS</a></Button>
+          <CreateEventModal show={modalShow} onHide={() => setModalShow(false)}/>
           <RSVPModal show={rsvp} onHide={() => setRSVP(false)}/>
         </div>
       </div>   

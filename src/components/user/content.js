@@ -14,9 +14,8 @@ const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
     height: '100vh',
-    backgroundColor: 'black'
-    /* coverImage: `url(${coverImage})`,
-    backgroundImage: `url(${coverImage})` */
+    coverImage: `url(${coverImage})`,
+    backgroundImage: `url(${coverImage})`
   },
   container: {
     position: 'absolute',
@@ -109,7 +108,8 @@ export default function Content() {
         <p className={css(styles.description)}>Incentivize DAO Participation</p>
         <div className={css(styles.btnContainer)}>
           <Button className={css(styles.adminBtn)} onClick= {() => setModalShow(!modalShow)}>CREATE EVENT</Button>
-          <Button className={css(styles.adminBtn)}><a className={css(styles.adminBtn)} href='#events'>FIND EVENTS</a></Button>
+          <Button className={css(styles.adminBtn)}><a className={css(styles.adminBtn)} href='#events'>SEARCH EVENTS</a></Button>
+          <Button className={css(styles.adminBtn)}><Link className={css(styles.adminItem)} to='/admin'>ADMIN</Link></Button>
           <CreateEventModal show={modalShow} onHide={() => setModalShow(false)}/>
           <RSVPModal show={rsvp} onHide={() => setRSVP(false)}/>
         </div>
